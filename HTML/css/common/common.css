@@ -1,0 +1,41 @@
+﻿
+.text-align-right{
+    text-align:right;
+}
+
+.text-align-center {
+    text-align:center;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.a-row{
+    margin-top: 16px;
+
+}
+
+.m-label{
+    margin-bottom:4px;
+}
+
+input[required]::after{
+    display:block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #ff4747;
+    transform: rotate(45deg);
+    left: 50%;
+    content: "Thông tin";
+}
+
+input.border-red{
+    border: 1px solid #FF4747;
+}
+
+input.border-green{
+    border: 1px solid #00ff21;
+}

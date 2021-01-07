@@ -1,0 +1,199 @@
+﻿.m-dialog {
+    display: none;
+}
+
+    .m-dialog .dialog-model {
+        position: fixed;
+        opacity: .4;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        z-index: 999;
+    }
+
+    .m-dialog .dialog-content {
+        padding: 24px;
+        position: absolute;
+        width: 600px;
+        height: 550px;
+        background-color: #ffffff;
+        z-index: 1000;
+        top: calc(50% - 200px);
+        left: calc(50% - 400px);
+        border-radius: 5px;
+    }
+
+    .m-dialog .dialog-header {
+        display: flex;
+    }
+
+        .m-dialog .dialog-header .dialog-header-close {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+            .m-dialog .dialog-header .dialog-header-close:hover {
+                border-radius: 5px;
+            }
+
+            .m-dialog .dialog-header .dialog-header-close button {
+                width: 40px;
+                height: 40px;
+                border-radius: 0 5px 0 0;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background-image: url('/content/icon/x.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px;
+                opacity: .7;
+            }
+
+                .m-dialog .dialog-header .dialog-header-close button:hover {
+                    background-color: #ccc;
+                }
+
+        /*Tiêu đề của dialog*/
+        .m-dialog .dialog-header .dialog-header-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+    .m-dialog .dialog-content .dialog-body {
+        height: 500px;
+    }
+
+        .m-dialog .dialog-content .dialog-body .dialog-body-1 {
+            height: 240px;
+            display: flex;
+            padding-top: 15px;
+        }
+
+.dialog-body-1 .Colum-1 {
+    width: 200px;
+    height: 250px;
+    margin-left: 15px;
+}
+
+    .dialog-body-1 .Colum-1 .image {
+        width: 150px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: 0.1px solid #808080;
+        border-radius: 50%;
+        margin-left: 2px;
+    }
+
+.img {
+    background-image: url('/content/icon/add.png');
+}
+
+.dialog-body-1 .Colum-1 .text1 {
+    font-size: 13px;
+    color: #bbbbbb;
+    font-family: GoogleSans-Regular;
+    text-align: center;
+}
+
+.dialog-body-1 .Colum-1 .text2 {
+    font-size: 13px;
+    color: #141313;
+    font-family: GoogleSans-Regular;
+    text-align: center;
+}
+
+.dialog-body-1 .Colum-2 {
+    width: 200px;
+    height: 250px;
+    /*background-color: aquamarine;*/
+}
+
+.dialog-body-1 .Colum-3 {
+    width: 200px;
+    height: 250px;
+    /*background-color: #808080;*/
+}
+
+.m-dialog .dialog-content .dialog-body .dialog-body2 {
+    height: 235px;
+    /*background-color: #019160;*/
+    margin-top: 10px;
+}
+
+.dialog-body .dialog-body-2 {
+    height: 170px;
+    /*background-color: #ccc;*/
+    float: left;
+}
+
+.dialog-body-2 .dialog-body-2-1 {
+    width: 405px;
+    height: 170px;
+    /*background-color: antiquewhite;*/
+    float: left;
+}
+
+.dialog-body-2 .dialog-body-2-2 {
+    width: 195px;
+    height: 170px;
+    /*background-color: #808080;*/
+    float: left;
+}
+
+.dialog-body2 .dialog-body-2-3 {
+    width: 600px;
+    height: 65px;
+    /*background-color: aquamarine;*/
+}
+/*footer*/
+.m-dialog .dialog-footer {
+    width: 700px;
+    background-position: center;
+}
+
+    .m-dialog .dialog-footer .dialog-footer-detail {
+        padding-right: 100px;
+        padding-top: 10px;
+    }
+
+    .m-dialog .dialog-footer .save {
+        float: right;
+        display: flex;
+        align-items: center;
+        background-color: #019160;
+        border-radius: 4px;
+        height: 30px;
+        font-size: 13px;
+        color: #ffffff;
+        font-family: GoogleSans-Regular;
+        padding-left: 10px;
+        padding-right: 10px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+        .m-dialog .dialog-footer .save .save-icon {
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+    .m-dialog .dialog-footer .cancel {
+        float: right;
+        margin-top: 7px;
+        margin-right: 32px;
+        cursor: pointer;
+        font-family: GoogleSans-Regular;
+        font-size: 13px;
+    }
+
+.icon {
+    background-image: url('/content/icon/document-online.png');
+}
